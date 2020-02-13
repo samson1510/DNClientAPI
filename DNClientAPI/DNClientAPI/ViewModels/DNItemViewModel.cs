@@ -295,12 +295,5 @@ namespace XRETAIL.ViewModels {
       }
       return itemError;
     }
-
-    public enum NotificationType {
-      error,
-      success,
-      warning,
-      info
-    }
   }
 }
