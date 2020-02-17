@@ -13,7 +13,6 @@ using System.Linq;
 
 namespace XRETAIL.ViewModels {
   public class DNItemViewModel : BaseViewModel {
-    private DNItem _selecteditem;
     public ObservableCollection<DNItem> Items { get; set; }
     public int TotalRecords { get; set; }
     public DNItemViewModel() {

@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using DataNova.Common;
 namespace DNClientAPI.Models {
   public class DNEventBookingItem : BaseModel {
     private double _salesprice;
@@ -100,7 +101,4 @@ namespace DNClientAPI.Models {
     [JsonProperty("discount_type")]
     public ReceiptDiscountType TicketDiscountType { get; set; }
   }
-
-  public enum DNBookingItemType { Item, Duncode }
-  public enum ReceiptDiscountType { Manual, Matrix, Campaign, Subtotal, Dun, Step, BuyMPayN, BuyMPayAmount, DiscountGroup, Employee, Customer, MemberShip, CampaignGroup, CampaignSupplierGroup, CampaignItemGroup, Connected, Category, CustomerPerItem, PickAndMix, MemberOffer, MatrixWithoutCustomer, MemeberOfferWithoutCustomer, MenuItem, Club, Loyalty, LgPickAndMix, ScannedMenuPack, Coupon, CampaignandMatrix, CustomerDeal, MixMatch };
 }

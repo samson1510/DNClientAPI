@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using DNClientAPI.Globalization;
+using DataNova.Common;
 
 namespace DNClientAPI.Models {
   public class DNItem:BaseModel {
@@ -257,33 +258,4 @@ namespace DNClientAPI.Models {
   public class DNItems:List<DNItem> {
 
   }
-  public enum DNItemType {
-    Blank,
-    ElectricalItemExcGuarantee,
-    ElectricalItemIncGuarantee,
-    GoldSmith,
-    Liquor,
-    Renting,
-    Z,
-    Recipe,
-    Tobbaco,
-    EnergyDrinks,
-    Tile,
-    Telekort,
-    MoneyGame,
-    Commission,
-    Medicine,
-    Food,
-    ColdStorage,
-    Frozen,
-    ShoppingBag,
-    AlcoholFree,
-    SpilliKassa,
-    StoreSales,
-    CinemaTickets,
-    Badekort,
-    Paintball,
-    Gebyr
-  }
-  public enum DNCommissionType { Blank, PayIn, PayOut }
 }

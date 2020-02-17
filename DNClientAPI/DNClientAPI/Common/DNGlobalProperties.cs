@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
+using DataNova.Common;
 
 namespace DNClientAPI.Globalization {
   public class DNGlobalProperties {
@@ -28,7 +28,9 @@ namespace DNClientAPI.Globalization {
     public string ERPAPIUserNumber { get; set; }
     public string ERPAPISecretKey { get; set; }
     public string ERPAPIUserPassword { get; set; }
-
+    public long ShopNumber { get; set; }
+    public int ProfileNumber { get; set; }
+    public DNLanguageType DefaultLanguage { get; set; }
   }
 }
 
